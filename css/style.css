@@ -1,0 +1,235 @@
+@font-face{
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Bold.ttf);
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+:root {
+    --color-black: #000000;
+    --color-white: #F5F5F2;
+    --color-accent: #CF6F49;
+    --color-gray: #65665C;
+    --font-roboto: 'Roboto';
+}
+
+header section.verx {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    background-color: #939878;
+    align-items: center;
+    justify-items: center;
+    padding: 0 40px;
+}
+
+header section.verx p {
+    color: var(--color-white);
+    font-family: var(--font-roboto);
+    font-size: 14px;
+}
+
+header section.menu {
+    padding: 16px 80px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+}
+
+header section.menu div.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+header section.menu nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    column-gap: 20px;
+}
+
+header section.menu nav ul li {
+    list-style-type: none;
+    font-family: var(--font-roboto);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header section.menu nav ul li:nth-child(6) {
+    padding: 10px 10px 10px 20px;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+}
+.btn{
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    justify-self: center;
+    /* padding: 10px 20px; */
+    border-radius: 6px; 
+    width:154px ;
+    height: 50px;
+}
+.btn:hover{
+    background-color:red;
+    transition: all 0.8s;
+}
+header section.menu nav button.btn{
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+header section.menu nav button.btn:hover{
+    background-color:red;
+    transition: all 0.8s;
+}
+main section.find {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+}
+
+main section.find article {
+    display: grid;
+    justify-items: start;
+    background-color: var(--color-white);
+}
+
+main section.find article span {
+    padding: 0 80px;
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+main section.find article h1 {
+    padding: 0 70px;
+    font-family: var(--font-roboto);
+    font-size: 56px;
+    font-weight: 400;
+    width: 90%;
+}
+
+main section.find article p {
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    padding: 0 80px;
+    width: 80%;
+    color: var(--color-gray);
+}
+
+main section.find article article {
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 16px;
+}
+
+main section.find article article div {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    column-gap: 10px;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+main section.find article article div input {
+    border: none;
+    font-size: 20px;
+    background-color: var(--color-white);
+}
+
+
+
+main section.find article div:last-child {
+    justify-self: end;
+    align-self: end;
+}
+
+main section.ipsum {
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+main section.ipsum p {
+    font-family: var(--font-roboto);
+    font-size: 18px;
+}
+
+main section.ipsum article {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-self: end;
+    column-gap: 40px;
+    cursor: pointer;
+}
+
+main section.how {
+    padding: 60px 80px;
+    display: grid;
+    justify-items: center;
+}
+
+main section.how h2 {
+    font-family: var(--font-roboto);
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+main section.how>p {
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    color: var(--color-gray);
+    
+}
+
+main section.how div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 33px;
+}
+
+main section.how div article {
+    display: grid;
+    justify-items: center;
+    border: 1px solid rgba(231, 232, 227, 1);
+    padding: 50px 40px;
+    row-gap: 20px;
+    border-radius: 16px;
+    margin-top: 60px;
+}
+
+main section.how div article span {
+    font-family: var(--font-roboto);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main section.how div article p {
+    font-family: var(--font-roboto);
+    color: var(--color-gray);
+    width: 95%;
+    text-align: center;
+    justify-content:space-between;
+}
